@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_title" />
+
+    <LinearLayout
+        android:id="@+id/lil_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/color_bottom_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_main_tab_edit"
+                    android:layout_width="35dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/btn_tab_home"
+                    android:textSize="@dimen/dimen_tab_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_main_tab_album"
+                    android:layout_width="35dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/btn_tab_class"
+                    android:textSize="@dimen/dimen_tab_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_main_tab_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/btn_tab_class"
+                    android:scaleType="matrix"
+                    android:text="@string/tab_text_buy"
+                    android:textColor="@drawable/tev_tab_color"
+                    android:textSize="@dimen/dimen_tab_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_main_tab_my"
+                    android:layout_width="35dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/btn_tab_my"
+                    android:textSize="@dimen/dimen_tab_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lil_main_bottom"
+        android:layout_below="@id/layout_title" />
+
+</RelativeLayout>

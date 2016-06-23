@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="311px"
+        android:layout_height="144px"
+        android:background="@null"
+        app:layout_marginLeftPercent="0%"/>
+    <TextView
+        android:id="@+id/tev_waitupload_item"
+        android:layout_width="311px"
+        android:layout_height="144px"
+        android:layout_marginLeft="317px"
+        android:gravity="center_vertical"
+        android:text="sdsd"
+        android:background="@null" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="58dp"
+        android:layout_height="68dp"
+        android:gravity="center|center_horizontal"
+        app:layout_marginLeftPercent="85%"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        app:layout_marginTopPercent="12%"
+        android:background="@drawable/horization_line" />
+
+
+</com.zhy.android.percent.support.PercentFrameLayout>

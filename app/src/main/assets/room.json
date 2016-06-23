@@ -1,0 +1,1710 @@
+[
+  {
+    "areaId": "130000",
+    "areaName": "1室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "2室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "3室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "4室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "5室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "6室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "7室",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "1厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "2厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "3厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "4厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "5厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "6厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "7厅",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "1卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "2卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "3卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "4卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "5卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "6卫"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "7卫"
+          }
+        ]
+      }
+    ]
+  }
+]

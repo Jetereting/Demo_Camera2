@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/p"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:visibility="gone"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="36%"
+        app:layout_heightPercent="9%"
+        app:layout_marginTopPercent="4%"
+        app:layout_marginLeftPercent="4%"
+        android:text="\n分享地址："/>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="56%"
+        app:layout_heightPercent="9%"
+        android:lines="1"
+        app:layout_marginTopPercent="4%"
+        app:layout_marginLeftPercent="27%" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="9%"
+        app:layout_marginTopPercent="2.4%"
+        app:layout_marginLeftPercent="84%"
+        android:background="@drawable/share"/>
+
+</com.zhy.android.percent.support.PercentFrameLayout>

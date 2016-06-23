@@ -1,0 +1,45 @@
+type:租房:1,售房2;
+name:小区名称
+address:小区地址
+unitprice:单价
+area:面积
+propertyfee:物业费
+age:房龄
+floor:所在楼层
+totalfloor:总楼层
+room:室
+office:厅
+toilet:卫
+orientation:朝向;东:1,西:2,南:3,北:4,东南5,西南6,东北7,西北8,东西9,南北0
+structure:结构;砖混结构:1,钢筋混凝土:2,钢结构:3,木结构:4
+renovation:装修程度;毛坯:1,简易装修:2,中档装修:3,高档装修:4,豪华装修:5
+telphone:电话
+contacts:联系人
+
+http://115.159.41.95/uploadfile/RoomServlet?keytelphone=18263652797&filepath=那一长串数字&type=1&name=华府一品&address=山东省高密市杏坛西街1号&unitprice=0.5&area=120&propertyfee=1.1&age=5&floor=4&totalfloor=6&room=1&office=1&toilet=1&orientation=1&structure=1&renovation=1&telphone=18263652797&contacts=赵三
+
+
+json:
+{
+    "dataList": {
+        "office": "1;",
+        "total": "60.0;",
+        "orientation": "1;",
+        "structure": "1;",
+        "type": "1;",
+        "telphone": "18263652797;",
+        "contacts": "赵三;",
+        "totalfloor": "6;",
+        "unitprice": "0.5;",
+        "area": "120;",
+        "floor": "4;",
+        "toilet": "1;",
+        "address": "山东省高密市杏坛西街1号;",
+        "age": "5;",
+        "name": "华府一品;",
+        "renovation": "1;",
+        "room": "1;",
+        "propertyfee": "1.1;"
+    },
+    "status": "1"
+}

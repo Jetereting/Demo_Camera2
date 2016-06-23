@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VRhouse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- tab -->
+    <string name="tab_text_home">首页</string>
+    <string name="tab_text_class">相册</string>
+    <string name="tab_text_buy">相机</string>
+    <string name="tab_text_my">我的</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+
+    <!-- 理光相机 -->
+    <!-- 192.168.1.1    192.168.1.5 -->
+    <string name="theta_ip_address">192.168.1.1</string>
+    <string name="label_btn_shoot">拍照</string>
+    <string name="text_camera_notconnected">照相机没有连接</string>
+    <string name="text_camera_standby">等待</string>
+    <string name="text_camera_synthesizing">图像同步中</string>
+    <string name="menu_configuration">inertia</string>
+    <string name="menu_connection">connection</string>
+    <string name="rotate_inertia">rotation inertia</string>
+    <string name="inertia_0">无</string>
+    <string name="inertia_50">弱</string>
+    <string name="inertia_100">强</string>
+    <string name="delete_dialog_message">删除这个文件?</string>
+    <string name="dialog_positive_button">确认</string>
+    <string name="label_btn_image_size">图像大小</string>
+    <string name="image_size_2048x1024">2048 x 1024</string>
+    <string name="image_size_5376x2688">5376 x 2688</string>
+    <!-- 进度条完成 -->
+    <string name="progress_ok">上传完成！</string>
+
+
+</resources>

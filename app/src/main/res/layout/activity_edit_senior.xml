@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="us.eiyou.demo_camera.activity.EditSeniorActivity">
+
+    <include
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_title" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_jiantou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="25%"
+        android:text="箭头指示"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_tuwen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="40%"
+        android:text="图文描述"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_shapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="55%"
+        android:text="沙盘"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

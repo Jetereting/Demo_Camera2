@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_title" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_anlimingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="20%"
+        android:text="案例名称"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_changjingmingcheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="35%"
+        android:text="场景名称"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_lianxidianhua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="50%"
+        android:text="联系电话"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_zhinanzhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="65%"
+        android:text="指南针"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

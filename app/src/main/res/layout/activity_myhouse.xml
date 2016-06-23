@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_title_back" />
+
+    <LinearLayout
+        android:id="@+id/lil"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_mytour_waitupload"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="待上传"
+            android:textColor="@color/color_bottom_text_normal"
+            android:textSize="@dimen/dimen_text_centre" />
+
+        <Button
+            android:id="@+id/btn_mytour_lookshare"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="查看分享"
+            android:textColor="@color/color_text_normal"
+            android:textSize="@dimen/dimen_text_centre" />
+    </LinearLayout>
+
+</RelativeLayout>

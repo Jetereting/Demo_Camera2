@@ -1,0 +1,458 @@
+[
+  {
+    "areaId": "130000",
+    "areaName": "朝东",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "钢结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢、钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "混合结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "砖木结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "其他结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "朝西",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "钢结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢、钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "混合结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "砖木结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "其他结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "朝南",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "钢结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢、钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "混合结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "砖木结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "其他结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "areaId": "130000",
+    "areaName": "朝北",
+    "cities": [
+      {
+        "areaId": "130100",
+        "areaName": "钢结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢、钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "钢筋混凝土结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "混合结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "砖木结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      },
+      {
+        "areaId": "130100",
+        "areaName": "其他结构",
+        "counties": [
+          {
+            "areaId": "130102",
+            "areaName": "毛坯"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "简装修"
+          },
+          {
+            "areaId": "130102",
+            "areaName": "精装修"
+          }
+        ]
+      }
+    ]
+  }
+]

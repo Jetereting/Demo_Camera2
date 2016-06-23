@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_tuwen"
+        android:layout_width="121dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:textColor="#0096f4"
+        android:text="图文"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="编辑"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_marginTopPercent="88%"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/b_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="12dp"
+        android:text="删除"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_marginTopPercent="88%"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- 点击时的背景图 -->
+        <item android:state_pressed="true"
+            android:drawable="@color/button0" />
+        <!-- 获取焦点时的背景图 -->
+        <item android:state_focused="true"
+            android:drawable="@color/button1" />
+        <!-- 默认的背景图 -->
+        <item android:drawable="@color/button2" />
+</selector>
