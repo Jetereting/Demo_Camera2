@@ -72,8 +72,17 @@
         android:text="帮助"
         android:textColor="#ffffff"
         android:textSize="33px"/>
-
-
-
+    <Button
+        android:id="@+id/agent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="7%"
+        app:layout_marginTopPercent="60.4%"
+        app:layout_marginLeftPercent="11%"
+        android:background="@drawable/button_background"
+        android:text="我的资料"
+        android:textColor="#ffffff"
+        android:textSize="33px"/>
 
 </com.zhy.android.percent.support.PercentFrameLayout>

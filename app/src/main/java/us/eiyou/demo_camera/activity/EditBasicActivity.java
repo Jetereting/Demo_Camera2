@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.beardedhen.androidbootstrap.BootstrapCircleThumbnail;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import us.eiyou.demo_camera.R;
 import us.eiyou.demo_camera.utils.SP;
-
+//漫游编辑 原基本编辑
 public class EditBasicActivity extends AppCompatActivity {
 
     @Bind(R.id.tev_app_title)
@@ -23,7 +24,7 @@ public class EditBasicActivity extends AppCompatActivity {
     @Bind(R.id.b_anlimingcheng)
     BootstrapButton bAnlimingcheng;
     @Bind(R.id.b_changjingmingcheng)
-    BootstrapButton bChangjingmingcheng;
+    BootstrapCircleThumbnail bChangjingmingcheng;
     @Bind(R.id.b_lianxidianhua)
     BootstrapButton bLianxidianhua;
     @Bind(R.id.b_zhinanzhen)
@@ -34,7 +35,7 @@ public class EditBasicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_basic);
         ButterKnife.bind(this);
-        tevAppTitle.setText("基本编辑");
+        tevAppTitle.setText("漫游编辑");
         tvUser.setText(SP.getString(getApplicationContext(),"telephone"));
     }
 

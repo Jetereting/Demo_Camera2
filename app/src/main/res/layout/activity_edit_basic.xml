@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         layout="@layout/app_title" />
     <com.beardedhen.androidbootstrap.BootstrapButton
+        android:visibility="gone"
         android:id="@+id/b_anlimingcheng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,22 +27,20 @@
         app:buttonMode="regular"
         app:showOutline="false"
         app:roundedCorners="true"/>
-    <com.beardedhen.androidbootstrap.BootstrapButton
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
         android:id="@+id/b_changjingmingcheng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_marginTopPercent="25%"
+        app:layout_widthPercent="45%"
+        app:layout_heightPercent="45%w"
+        android:src="@drawable/a_changjingmingcheng"
+        app:bootstrapBrand="primary"
         android:layout_centerHorizontal="true"
-        app:layout_marginTopPercent="35%"
-        android:text="场景名称"
-        app:bootstrapBrand="success"
-        app:bootstrapSize="lg"
-        android:layout_margin="12dp"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"/>
+        app:hasBorder="true"/>
+
     <com.beardedhen.androidbootstrap.BootstrapButton
+        android:visibility="gone"
         android:id="@+id/b_lianxidianhua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,6 +56,7 @@
         app:showOutline="false"
         app:roundedCorners="true"/>
     <com.beardedhen.androidbootstrap.BootstrapButton
+        android:visibility="gone"
         android:id="@+id/b_zhinanzhen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

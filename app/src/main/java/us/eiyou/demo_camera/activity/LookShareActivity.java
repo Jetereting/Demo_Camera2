@@ -3,8 +3,6 @@ package us.eiyou.demo_camera.activity;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,7 +24,6 @@ import java.util.List;
 import us.eiyou.demo_camera.R;
 import us.eiyou.demo_camera.adpter.LookShareAdpter;
 import us.eiyou.demo_camera.model.WaitUploadModel;
-import us.eiyou.demo_camera.utils.CombineBitmap;
 import us.eiyou.demo_camera.utils.Config;
 import us.eiyou.demo_camera.utils.GetBitmapFromUrl;
 import us.eiyou.demo_camera.utils.Http;
@@ -44,16 +41,13 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
 
     String type;
     String path;
-    String selectPath = "";
     String telephone = "";
-    int photoID = 0;
     String[] url;
     ArrayList<Integer> num = new ArrayList<Integer>();
     String urlList[];
     String paraList[];
     ProgressDialog progressDialog;
 
-    TextView tev_share, tev_look, tev_cancel;
 
 
     @SuppressWarnings({"unchecked", "rawtypes"})
@@ -85,11 +79,13 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
         } else if (("house_share").equals(type)) {
             mAdapter = new LookShareAdpter(this, list, 2, this);
             listView.setAdapter(mAdapter);
-            tev_title_content.setText("360全景房产分享");
+//            tev_title_content.setText("360全景房产分享");
+            tev_title_content.setText("我的房产库");
         } else if (("house_share7").equals(type)) {
             mAdapter = new LookShareAdpter(this, list, 2, this);
             listView.setAdapter(mAdapter);
-            tev_title_content.setText("720全景房产分享");
+//            tev_title_content.setText("720全景房产分享");
+            tev_title_content.setText("我的房产库");
         }
         progressDialog = new ProgressDialog(LookShareActivity.this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -97,7 +93,6 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
         progressDialog.setIndeterminate(false);
         progressDialog.setCancelable(true);
         progressDialog.show();
-//        new Thread(runnable).start();
         LookShareTask task = new LookShareTask();
         task.execute();
     }
@@ -113,7 +108,6 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                 finish();
             }
         });
-
     }
 
     class LookShareTask extends AsyncTask<Void, Integer, List<WaitUploadModel>> {
@@ -141,8 +135,8 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                 e.printStackTrace();
             }
             String input = jsonO.toString();
-            Http http = new Http();
-            String requst = http.Result(Config.login_url, input);
+            Log.d("LookShareTask", input);
+            String requst = Http.Result(Config.login_url, input);
             JSONObject json = null;
             try {
                 json = new JSONObject(requst);
@@ -151,6 +145,7 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
             }
             try {
                 JSONObject getjson = json;
+                Log.d("LookShareTask", "json:" + json);
                 JSONObject j = getjson.getJSONObject("dataList");
                 path = j.getString("path");
                 String url11 = j.getString("url");
@@ -158,25 +153,19 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                 String para = j.getString("para");
                 paraList = para.split(";");
 
+                String addtime = j.getString("addtime");
+                String name = j.getString("name");
+
                 url = path.split(";");
                 for (int i = 0; i < url.length; i++) {
                     String photoPath[] = url[i].split(",");
                     num.add(i, photoPath.length);
-                    Bitmap bitmap = null, bitmap1 = null, bitmapWrite = null;
-                    bitmapWrite = ((BitmapDrawable) getResources().getDrawable(R.drawable.write)).getBitmap();
                     for (int j1 = 0; j1 < photoPath.length; j1++) {
-                        bitmap1 = GetBitmapFromUrl.getBitmap(photoPath[j1]);
-                        if (photoPath.length > 1 && j1 <= photoPath.length - 2) {
-                            bitmap1 = CombineBitmap.combine(bitmapWrite, bitmap1, 0, 50);
-                            bitmap = CombineBitmap.combine(bitmap1, GetBitmapFromUrl.getBitmap(photoPath[j1 + 1]), 440, 50);
-                        } else if (photoPath.length == 1) {
-                            bitmap = bitmap1;
-                        }
                         int progress = (int) ((float) (i + 1) / url.length * 100);
                         // 通知更新进度
                         publishProgress(progress);
                     }
-                    list.add(new WaitUploadModel(url[i] + "", bitmap));
+                    list.add(new WaitUploadModel(url[i] + "", GetBitmapFromUrl.getBitmap(photoPath[0]),name.split(";")[i],addtime.split(";")[i]));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -198,91 +187,6 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
         }
     }
 
-    Runnable runnable = new Runnable() {
-
-        @Override
-        public void run() {
-            // TODO Auto-generated method stub
-            JSONObject jsonO = new JSONObject();
-            try {
-                telephone = SP.getString(getApplicationContext(), "telephone");
-                jsonO.put("serviceName", "findMyGoodsOrder2");
-                JSONObject jsonP = new JSONObject();
-                jsonP.put("telphone", telephone);
-                switch (type) {
-                    case "trip_share":
-                        jsonP.put("type", 1);
-                        break;
-                    case ("house_share"):
-                        jsonP.put("type", 2);
-                        break;
-                    case ("house_share7"):
-                        jsonP.put("type", 3);
-                        break;
-                }
-                jsonO.put("queryParameters", jsonP);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            String input = jsonO.toString();
-            Http http = new Http();
-            String requst = http.Result(Config.login_url, input);
-            JSONObject json = null;
-            try {
-                json = new JSONObject(requst);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            Message msg = new Message();
-            msg.obj = json;
-            handler.sendMessage(msg);
-        }
-    };
-    private Handler handler = new Handler() {
-        public void handleMessage(Message msg) {
-            try {
-                JSONObject getjson = (JSONObject) msg.obj;
-                int status = getjson.getInt("status");
-                if (status == 1) {
-                    JSONObject j = getjson.getJSONObject("dataList");
-                    path = j.getString("path");
-                    String url11 = j.getString("url");
-                    urlList = url11.split(";");
-                    String para = j.getString("para");
-                    paraList = para.split(";");
-
-                    url = path.split(";");
-                    for (int i = 0; i < url.length; i++) {
-                        String photoPath[] = url[i].split(",");
-                        num.add(i, photoPath.length);
-                        Bitmap bitmap = null, bitmap1 = null, bitmapWrite = null;
-                        bitmapWrite = ((BitmapDrawable) getResources().getDrawable(R.drawable.write)).getBitmap();
-                        for (int j1 = 0; j1 < photoPath.length; j1++) {
-                            bitmap1 = GetBitmapFromUrl.getBitmap(photoPath[j1]);
-                            if (photoPath.length > 1 && j1 <= photoPath.length - 2) {
-                                bitmap1 = CombineBitmap.combine(bitmapWrite, bitmap1, 0, 50);
-                                bitmap = CombineBitmap.combine(bitmap1, GetBitmapFromUrl.getBitmap(photoPath[j1 + 1]), 440, 50);
-                            } else if (photoPath.length == 1) {
-                                bitmap = bitmap1;
-                            }
-                        }
-                        list.add(new WaitUploadModel(url[i] + "", bitmap));
-                        mAdapter.notifyDataSetChanged();
-                    }
-                } else {
-                    String comment = getjson.getString("comment");
-                    Toast.makeText(getApplicationContext(), comment,
-                            Toast.LENGTH_LONG).show();
-                }
-            } catch (Exception e) {
-                Toast.makeText(getApplicationContext(),
-                        "获取数据失败:" + e.toString(), Toast.LENGTH_SHORT).show();
-            }
-            progressDialog.dismiss();
-        }
-    };
-
 
     @Override
     public void click(final View v) {
@@ -298,7 +202,7 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
             case R.id.button1:
                 Intent intent1 = new Intent();
                 String str[] = paraList[(Integer) v.getTag()].split("_");
-                String url = Config.urlHead+"uploadfile/ImagesUploaded/" + str[0] + "_3/" + str[1] + "/vtour/vr-go/1.jpg";
+                String url = Config.urlHead + "uploadfile/ImagesUploaded/" + str[0] + "_3/" + str[1] + "/vtour/vr-go/1.jpg";
                 if (("house_share").equals(type)) {
                     intent1.putExtra("type", "house_share");
                 } else if (("house_share7").equals(type)) {
@@ -309,7 +213,7 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                 intent1.putExtra("num", num.get((Integer) v.getTag()) + "");
                 intent1.putExtra("para", paraList[(Integer) v.getTag()]);
                 Log.d("LookShareActivity", v.getTag().toString());
-                intent1.putExtra("photoPaths", path.split(";")[(Integer)v.getTag()]);
+                intent1.putExtra("photoPaths", path.split(";")[(Integer) v.getTag()]);
                 intent1.setClass(getApplicationContext(), EditIndexActivity.class);
                 startActivity(intent1);
                 break;
@@ -339,7 +243,7 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                             }
                             jsonObject.put("queryParameters", queryParameters);
                             result = new JSONObject(Http.Result(Config.login_url, jsonObject.toString()));
-                            Log.d("LookShareActivity"," result.toString()"+ result.toString());
+                            Log.d("LookShareActivity", " result.toString()" + result.toString());
                         } catch (Exception e) {
                             Log.d("LookShareActivity", "e:" + e.toString());
                             e.printStackTrace();
@@ -361,7 +265,7 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
                 int status = jsonObject.getInt("status");
                 if (1 == status) {
                     Toast.makeText(getApplicationContext(), "删除成功！", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(),LookShareActivity.class).putExtra("type",getIntent().getStringExtra("type")));
+                    startActivity(new Intent(getApplicationContext(), LookShareActivity.class).putExtra("type", getIntent().getStringExtra("type")));
                     finish();
                 } else {
                     Toast.makeText(getApplicationContext(), jsonObject.getString("comment"), Toast.LENGTH_SHORT).show();
@@ -373,9 +277,18 @@ public class LookShareActivity extends Activity implements LookShareAdpter.Callb
         }
     };
 
+
+    @Override
+    protected void onRestart() {
+        list.clear();
+        LookShareTask task = new LookShareTask();
+        task.execute();
+        super.onRestart();
+    }
+
+
     @Override
     public void onBackPressed() {
         finish();
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 }

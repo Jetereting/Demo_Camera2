@@ -30,7 +30,7 @@ import us.eiyou.demo_camera.activity.MainActivity;
 import us.eiyou.demo_camera.utils.Config;
 import us.eiyou.demo_camera.utils.CopyFiles;
 import us.eiyou.demo_camera.utils.SP;
-
+//已经没用
 public class AlbumFragment extends Fragment {
 
     private ProgressDialog progress;

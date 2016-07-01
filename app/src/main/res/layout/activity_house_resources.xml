@@ -73,8 +73,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:hint="地址"
+                    android:hint="请选择省市区"
                     android:focusable="false"
+                    android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="详细地址"
                     android:lines="1"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -86,7 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:hint="单价  (元/平方米)"
+                    android:hint="总价  (元)"
                     android:inputType="number"
                     android:lines="1"/>
             </android.support.design.widget.TextInputLayout>

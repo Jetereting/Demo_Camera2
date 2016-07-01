@@ -50,7 +50,7 @@
         app:layout_marginTopPercent="47%"
         app:layout_marginLeftPercent="9%"
         android:background="@null"
-        android:text="等待上传"
+        android:text="发布房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
     <TextView
@@ -61,7 +61,7 @@
         app:layout_marginTopPercent="22%"
         app:layout_marginLeftPercent="9%"
         android:background="@null"
-        android:text="等待上传"
+        android:text="发布房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
     <TextView
@@ -73,7 +73,7 @@
         app:layout_marginTopPercent="74%"
         app:layout_marginLeftPercent="9%"
         android:background="@null"
-        android:text="等待上传"
+        android:text="发布房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
     <TextView
@@ -84,7 +84,7 @@
         app:layout_marginTopPercent="22%"
         app:layout_marginLeftPercent="48%"
         android:background="@null"
-        android:text="我的分享"
+        android:text="我的房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
     <TextView
@@ -95,7 +95,7 @@
         app:layout_marginTopPercent="47%"
         app:layout_marginLeftPercent="48%"
         android:background="@null"
-        android:text="我的分享"
+        android:text="我的房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
     <TextView
@@ -107,7 +107,7 @@
         app:layout_marginTopPercent="74%"
         app:layout_marginLeftPercent="48%"
         android:background="@null"
-        android:text="我的分享"
+        android:text="我的房产"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
 
@@ -180,4 +180,16 @@
         android:background="@drawable/button_background"
         android:textSize="33px"
         android:gravity="center_horizontal"/>
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/b_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="25%"
+        app:layout_widthPercent="45%"
+        app:layout_heightPercent="45%w"
+        android:src="@drawable/a_upload_photo"
+        app:bootstrapBrand="primary"
+        android:layout_gravity="center"
+        app:hasBorder="true"/>
+
 </com.zhy.android.percent.support.PercentFrameLayout>

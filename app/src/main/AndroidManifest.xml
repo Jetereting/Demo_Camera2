@@ -67,7 +67,8 @@
         <activity android:name=".activity.EditSeniorTuwenActivity" />
         <activity android:name=".activity.EditSeniorTuwenEditActivity" />
         <activity android:name=".activity.EditSeniorShapanActivity" />
-        <activity android:name=".activity.HouseResourcesActivity"></activity>
+        <activity android:name=".activity.HouseResourcesActivity" />
+        <activity android:name=".activity.AgentActivity"></activity>
     </application>
 
 </manifest>

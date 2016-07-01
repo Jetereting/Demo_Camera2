@@ -77,10 +77,12 @@ public class WaitUploadActivity extends Activity implements OnItemClickListener 
                 tev_title_content.setText("旅游上传");
                 break;
             case ("house_upload"):
-                tev_title_content.setText("360全景房产上传");
+//                tev_title_content.setText("360全景房产上传");
+                tev_title_content.setText("选择房产图片");
                 break;
             case ("house_upload7"):
-                tev_title_content.setText("720全景房产上传");
+//                tev_title_content.setText("720全景房产上传");
+                tev_title_content.setText("选择房产图片");
                 break;
         }
 
@@ -102,7 +104,7 @@ public class WaitUploadActivity extends Activity implements OnItemClickListener 
 
     private void initView() {
 
-        list = new ArrayList<WaitUploadModel>();
+        list = new ArrayList<>();
 
         listView = (ListView) findViewById(R.id.listview_waitupload);
         listView.setOnItemClickListener(this);

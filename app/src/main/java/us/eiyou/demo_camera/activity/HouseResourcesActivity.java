@@ -16,6 +16,7 @@ import com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapBrand;
 
 import org.json.JSONObject;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -65,6 +66,8 @@ public class HouseResourcesActivity extends AppCompatActivity {
     @Bind(R.id.management_fee)
     EditText managementFee;
     int resourcesType = 1;
+    @Bind(R.id.address1)
+    EditText address1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +113,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
                 resourcesType = 2;
                 bRent.setBootstrapBrand(DefaultBootstrapBrand.REGULAR);
                 bSale.setBootstrapBrand(DefaultBootstrapBrand.PRIMARY);
+                price.setHint("总价  (万)");
                 break;
             case R.id.address:
                 ArrayList<AddressPicker.Province> data = new ArrayList<>();
@@ -157,7 +161,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
                 picker2.show();
                 break;
             case R.id.b_submit:
-                if (room.getText().toString().length() == 0 || structure.getText().toString().length() == 0 || address.getText().toString().length() == 0) {
+                if (room.getText().toString().length() == 0 || structure.getText().toString().length() == 0 || address.getText().toString().length() == 0||address1.getText().toString().length()==0) {
                     Toast.makeText(this, "请完整信息后提交", Toast.LENGTH_SHORT).show();
                 } else {
                     String Saddress = "";
@@ -170,24 +174,24 @@ public class HouseResourcesActivity extends AppCompatActivity {
                     String Sstructure = "";
                     String Srenovation = "";
                     try {
-                        Saddress = java.net.URLEncoder.encode(address.getText().toString(), "UTF-8");
-                        Sname = java.net.URLEncoder.encode(name.getText().toString(), "UTF-8");
-                        Scontact = java.net.URLEncoder.encode(contact.getText().toString(), "UTF-8");
+                        Saddress = URLEncoder.encode(address.getText().toString()+";"+address1.getText().toString(), "UTF-8");
+                        Sname = URLEncoder.encode(name.getText().toString(), "UTF-8");
+                        Scontact = URLEncoder.encode(contact.getText().toString(), "UTF-8");
                         Iroom = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[0]);
                         Ioffice = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[1]);
                         Itoilet = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[2]);
-                        Sorientation = java.net.URLEncoder.encode(structure.getText().toString().split(" ")[0], "UTF-8");
-                        Sstructure = java.net.URLEncoder.encode(structure.getText().toString().split(" ")[1], "UTF-8");
-                        Srenovation = java.net.URLEncoder.encode(structure.getText().toString().split(" ")[2], "UTF-8");
+                        Sorientation = URLEncoder.encode(structure.getText().toString().split(" ")[0], "UTF-8");
+                        Sstructure = URLEncoder.encode(structure.getText().toString().split(" ")[1], "UTF-8");
+                        Srenovation = URLEncoder.encode(structure.getText().toString().split(" ")[2], "UTF-8");
                     } catch (Exception e) {
-                        Saddress = address.getText().toString();
+                        Saddress = address.getText().toString()+";"+address1.getText().toString();
                         Sname = contact.getText().toString();
                         Scontact = contact.getText().toString();
                         Sorientation = structure.getText().toString().split(" ")[0];
                         Sstructure = structure.getText().toString().split(" ")[1];
                         Srenovation = structure.getText().toString().split(" ")[2];
                     }
-                    final String url = Config.urlHead + "uploadfile/RoomServlet?keytelphone=" + SP.getString(getApplicationContext(), "telephone") + "&filepath=" + getIntent().getStringExtra("para").split("_")[1] + "&type=" + resourcesType + "&name=" + Sname + "&address=" + Saddress + "&unitprice=" + price.getText().toString() + "&area=" + area.getText().toString() + "&propertyfee=" + managementFee.getText().toString() + "&age=" + age.getText().toString() + "&floor=" + floor.getText().toString() + "&totalfloor=" + floors.getText().toString() + "&room=" + Iroom + "&office=" + Ioffice + "&toilet=" + Itoilet + "&orientation=" + Sorientation + "&structure=" + Sstructure + "&renovation=" + Srenovation + "&telphone=" + SP.getString(getApplicationContext(), "telephone") + "&contacts=" + Scontact;
+                    final String url = Config.urlHead + "uploadfile/RoomServlet?keytelphone=" + SP.getString(getApplicationContext(), "telephone") + "&filepath=" + getIntent().getStringExtra("para").split("_")[1] + "&type=" + resourcesType + "&name=" + Sname + "&address=" + Saddress + "&unitprice=" + price.getText().toString() + "&area=" + area.getText().toString() + "&propertyfee=" + managementFee.getText().toString() + "&age=" + age.getText().toString() + "&floor=" + floor.getText().toString() + "&totalfloor=" + floors.getText().toString() + "&room=" + Iroom + "&office=" + Ioffice + "&toilet=" + Itoilet + "&orientation=" + Sorientation + "&structure=" + Sstructure + "&renovation=" + Srenovation + "&telphone=" +phone.getText().toString() + "&contacts=" + Scontact;
                     Log.d("HouseResourcesActivity", url);
                     new Thread(new Runnable() {
                         @Override
@@ -217,9 +221,11 @@ public class HouseResourcesActivity extends AppCompatActivity {
                     } else if (dataList.getInt("type") == 2) {
                         bRent.setBootstrapBrand(DefaultBootstrapBrand.REGULAR);
                         bSale.setBootstrapBrand(DefaultBootstrapBrand.PRIMARY);
+                        price.setHint("总价  (万)");
                     }
                     name.setText(dataList.getString("name"));
-                    address.setText(dataList.getString("address"));
+                    address.setText(dataList.getString("address").split(";")[0]);
+                    address1.setText(dataList.getString("address").split(";")[1]);
                     price.setText(dataList.getString("unitprice"));
                     area.setText(dataList.getString("area"));
                     managementFee.setText(dataList.getString("propertyfee"));
@@ -227,7 +233,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
                     floors.setText(dataList.getString("totalfloor"));
                     floor.setText(dataList.getString("floor"));
                     room.setText(dataList.getString("room") + "室 " + dataList.getString("office") + "厅 " + dataList.getString("toilet") + "卫");
-                    structure.setText(dataList.getString("orientation")+" "+dataList.getString("structure")+" "+dataList.getString("renovation"));
+                    structure.setText(dataList.getString("orientation") + " " + dataList.getString("structure") + " " + dataList.getString("renovation"));
                     phone.setText(dataList.getString("telphone"));
                     contact.setText(dataList.getString("contacts"));
                 } else {

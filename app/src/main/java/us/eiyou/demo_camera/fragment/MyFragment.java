@@ -18,18 +18,20 @@ import org.json.JSONObject;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import us.eiyou.demo_camera.R;
+import us.eiyou.demo_camera.activity.AgentActivity;
 import us.eiyou.demo_camera.activity.HelpActivity;
 import us.eiyou.demo_camera.activity.LoginActivity;
-import us.eiyou.demo_camera.R;
 import us.eiyou.demo_camera.utils.Config;
 import us.eiyou.demo_camera.utils.Http;
 import us.eiyou.demo_camera.utils.SP;
-
+// 我的 退出登录 修改密码
 public class MyFragment extends Fragment {
     EditText et_loadpasswd, et_newpasswd;
     Button btn_change, btn_back;
     ProgressDialog progressDialog;
     String telephone = "";
+    Button agent;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,7 +47,13 @@ public class MyFragment extends Fragment {
         et_newpasswd = (EditText) view.findViewById(R.id.edt_leftmenu_myhome_changpasswd_newpasswd);
         btn_change = (Button) view.findViewById(R.id.btn_leftmenu_myhome_changpasswd_change);
         btn_back = (Button) view.findViewById(R.id.btn_back);
-
+        agent=(Button)view.findViewById(R.id.agent);
+        agent.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), AgentActivity.class));
+            }
+        });
         btn_back.setOnClickListener(new OnClickListener() {
 
             @Override

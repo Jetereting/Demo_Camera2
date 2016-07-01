@@ -126,4 +126,13 @@ public class LoginActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    @Override
+    protected void onRestart() {
+        if(SP.getString(getApplicationContext(),"telephone").length()!=0){
+            finish();
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        }
+        super.onResume();
+    }
 }

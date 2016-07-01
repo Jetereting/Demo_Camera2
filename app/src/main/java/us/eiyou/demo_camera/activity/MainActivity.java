@@ -20,6 +20,7 @@ import us.eiyou.demo_camera.fragment.AlbumFragment;
 import us.eiyou.demo_camera.fragment.CameraFragment;
 import us.eiyou.demo_camera.fragment.EditFragment;
 import us.eiyou.demo_camera.fragment.MyFragment;
+import us.eiyou.demo_camera.fragment.WebViewFragment;
 import us.eiyou.demo_camera.utils.SP;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Fragment[] fragments;
     // fragment界面
     private Fragment fragment_edit, fragment_album, fragment_camera,
-            fragment_my;
+            fragment_my,fragment_webview;
     // 当前tab下标
     private int currentTabIndex;
     boolean exit=false;
@@ -76,10 +77,11 @@ public class MainActivity extends AppCompatActivity {
         fragment_album = new AlbumFragment();
         fragment_camera = new CameraFragment();
         fragment_my = new MyFragment();
-        fragments = new Fragment[] { fragment_edit, fragment_album,
+        fragment_webview=new WebViewFragment();
+        fragments = new Fragment[] { fragment_webview,fragment_edit,
                 fragment_camera, fragment_my };
         // 添加显示第一个fragment
-        getFragmentManager().beginTransaction().add(R.id.fragment_container, fragment_edit).commit();
+        getFragmentManager().beginTransaction().add(R.id.fragment_container, fragment_webview).commit();
 
     }
 

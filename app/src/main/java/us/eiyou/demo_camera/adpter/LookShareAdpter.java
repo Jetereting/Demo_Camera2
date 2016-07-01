@@ -7,6 +7,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
 
@@ -24,7 +25,7 @@ public class LookShareAdpter extends BaseAdapter implements OnClickListener{
 	int type;
 	private Callback mCallback;
 
-	
+
 	public LookShareAdpter(Context context, List<WaitUploadModel> list,int type,Callback callback) {
 		super();
 		this.context = context;
@@ -66,11 +67,17 @@ public class LookShareAdpter extends BaseAdapter implements OnClickListener{
 			holder.button=(BootstrapButton)view.findViewById(R.id.button);
 			holder.button1=(BootstrapButton)view.findViewById(R.id.button1);
 			holder.button2=(BootstrapButton)view.findViewById(R.id.button2);
+			holder.tv_name=(TextView)view.findViewById(R.id.tv_name);
+			holder.tv_addtime=(TextView)view.findViewById(R.id.tv_addtime);
 			view.setTag(holder);
 		}else{
 			holder = (ViewHolder)view.getTag();
 		}
 		holder.imageView.setImageBitmap(getItem(position).getBitmap());
+        if(!getItem(position).getAddtime().equals("null")) {
+            holder.tv_name.setText(getItem(position).getName());
+            holder.tv_addtime.setText(getItem(position).getAddtime());
+        }
 		holder.button.setOnClickListener(this);
 		holder.button.setTag(position);
 		holder.button1.setOnClickListener(this);
@@ -87,6 +94,8 @@ public class LookShareAdpter extends BaseAdapter implements OnClickListener{
 		public BootstrapButton button;//show
 		public BootstrapButton button1;//edit
 		public BootstrapButton button2;//delete
+		TextView tv_name;
+		TextView tv_addtime;
 	}
 	@Override
 	public void onClick(View v) {
