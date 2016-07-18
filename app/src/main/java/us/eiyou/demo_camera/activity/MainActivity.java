@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 tabSelect(0);
                 break;
             case R.id.btn_main_tab_album:
-                tevAppTitle.setText("点击图片上传");
+                tevAppTitle.setText("房产发布");
                 tabSelect(1);
                 break;
             case R.id.btn_main_tab_camera:

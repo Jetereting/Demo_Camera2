@@ -10,8 +10,8 @@
     <include
         android:id="@+id/layout_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/app_title" />
+        android:layout_height="45dp"
+        layout="@layout/app_title_back" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:hint="物业费  (元/平方米)"
                     android:singleLine="true"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:lines="1"/>
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
@@ -161,18 +161,54 @@
                     android:inputType="number"
                     android:lines="1"/>
             </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:id="@+id/room"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="室/厅/卫"
-                    android:singleLine="true"
-                    android:focusable="false"
-                    android:lines="1"/>
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/room0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="几室"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:lines="1"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/room1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="几厅"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:lines="1"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/room2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="几卫"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:lines="1"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

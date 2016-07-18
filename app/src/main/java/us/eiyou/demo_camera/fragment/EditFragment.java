@@ -28,8 +28,8 @@ import butterknife.OnClick;
 import me.iwf.photopicker.PhotoPickerActivity;
 import me.iwf.photopicker.utils.PhotoPickerIntent;
 import us.eiyou.demo_camera.R;
-import us.eiyou.demo_camera.activity.LookShareActivity;
-import us.eiyou.demo_camera.activity.WaitUploadActivity;
+import us.eiyou.demo_camera.activity.MyHousePropertyActivity;
+import us.eiyou.demo_camera.activity.PublishHouseActivity;
 import us.eiyou.demo_camera.utils.Config;
 import us.eiyou.demo_camera.utils.CopyFiles;
 import us.eiyou.demo_camera.utils.SP;
@@ -66,22 +66,22 @@ public class EditFragment extends Fragment implements OnClickListener {
     public void onClick(View arg0) {
         switch (arg0.getId()) {
             case R.id.trip_share:
-                startActivity(new Intent(getActivity(), LookShareActivity.class).putExtra("type", "trip_share"));
+                startActivity(new Intent(getActivity(), MyHousePropertyActivity.class).putExtra("type", "trip_share"));
                 break;
             case R.id.trip_upload:
-                startActivity(new Intent(getActivity(), WaitUploadActivity.class).putExtra("type", "trip_upload"));
+                startActivity(new Intent(getActivity(), PublishHouseActivity.class).putExtra("type", "trip_upload"));
                 break;
             case R.id.house_share:
-                startActivity(new Intent(getActivity(), LookShareActivity.class).putExtra("type", "house_share"));
+                startActivity(new Intent(getActivity(), MyHousePropertyActivity.class).putExtra("type", "house_share"));
                 break;
             case R.id.house_upload:
-                startActivity(new Intent(getActivity(), WaitUploadActivity.class).putExtra("type", "house_upload"));
+                startActivity(new Intent(getActivity(), PublishHouseActivity.class).putExtra("type", "house_upload"));
                 break;
             case R.id.house_share7:
-                startActivity(new Intent(getActivity(), LookShareActivity.class).putExtra("type", "house_share7"));
+                startActivity(new Intent(getActivity(), MyHousePropertyActivity.class).putExtra("type", "house_share7"));
                 break;
             case R.id.house_upload7:
-                startActivity(new Intent(getActivity(), WaitUploadActivity.class).putExtra("type", "house_upload7"));
+                startActivity(new Intent(getActivity(), PublishHouseActivity.class).putExtra("type", "house_upload7"));
                 break;
         }
     }

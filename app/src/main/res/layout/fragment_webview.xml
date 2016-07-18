@@ -11,17 +11,56 @@
         android:layout_height="match_parent" />
 
     <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
-        android:id="@+id/b_share"
+        android:id="@+id/b_caidan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_marginTopPercent="18%"
         app:layout_marginLeftPercent="75%"
         app:layout_widthPercent="18%"
         app:layout_heightPercent="18%w"
-        android:src="@drawable/a_share"
+        android:src="@mipmap/icon_caidan"
         app:bootstrapBrand="primary"
         android:layout_gravity="center"
-        app:hasBorder="true"/>
+        app:hasBorder="false"/>
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/b_home"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="66%"
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="14%w"
+        android:src="@mipmap/icon_home"
+        app:bootstrapBrand="primary"
+        android:layout_gravity="center"
+        app:hasBorder="false"/>
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/b_back"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="31%"
+        app:layout_marginLeftPercent="66%"
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="14%w"
+        android:src="@mipmap/icon_back"
+        app:bootstrapBrand="primary"
+        android:layout_gravity="center"
+        app:hasBorder="false"/>
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/b_share"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="20%"
+        app:layout_marginLeftPercent="56%"
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="14%w"
+        android:src="@mipmap/icon_share"
+        app:bootstrapBrand="primary"
+        android:layout_gravity="center"
+        app:hasBorder="false"/>
 
 
 </com.zhy.android.percent.support.PercentRelativeLayout>

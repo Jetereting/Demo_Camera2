@@ -9,8 +9,8 @@
     <include
         android:id="@+id/layout_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/app_title" />
+        android:layout_height="45dp"
+        layout="@layout/app_title_back" />
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:visibility="gone"
         android:id="@+id/b_anlimingcheng"

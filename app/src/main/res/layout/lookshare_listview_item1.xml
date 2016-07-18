@@ -37,45 +37,36 @@
             android:text=""/>
     </LinearLayout>
 
-    <com.beardedhen.androidbootstrap.BootstrapButton
+    <Button
         android:id="@+id/button1"
         android:layout_marginTop="17dp"
-        android:layout_width="wrap_content"
+        android:layout_width="38dp"
         android:layout_height="33dp"
+        android:textSize="12sp"
         app:layout_marginLeftPercent="55.7%"
+        android:background="#566068"
         android:text="编辑"
-        android:gravity="center|center_horizontal"
-        app:bootstrapBrand="success"
-        app:bootstrapSize="xs"
-        app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"/>
-    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:gravity="center|center_horizontal"/>
+    <Button
         android:id="@+id/button"
         android:layout_marginTop="17dp"
-        android:layout_width="wrap_content"
+        android:layout_width="38dp"
         android:layout_height="33dp"
+        android:textSize="12sp"
         app:layout_marginLeftPercent="70.7%"
         android:text="查看"
         android:gravity="center|center_horizontal"
-        app:bootstrapBrand="primary"
-        app:bootstrapSize="xs"
-        app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"/>
-    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:background="#adc3c1"/>
+    <Button
         android:id="@+id/button2"
         android:layout_marginTop="17dp"
-        android:layout_width="wrap_content"
+        android:layout_width="38dp"
         android:layout_height="33dp"
+        android:textSize="12sp"
         app:layout_marginLeftPercent="85.7%"
         android:text="删除"
         android:gravity="center|center_horizontal"
-        app:bootstrapBrand="danger"
-        app:bootstrapSize="xs"
-        app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"/>
+        android:background="#b9e3d9"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="0.4dp"

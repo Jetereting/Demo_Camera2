@@ -1,5 +1,6 @@
 package us.eiyou.demo_camera.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -31,10 +32,6 @@ import us.eiyou.demo_camera.utils.SP;
 
 public class HouseResourcesActivity extends AppCompatActivity {
 
-    @Bind(R.id.tev_app_title)
-    TextView tevAppTitle;
-    @Bind(R.id.tv_user)
-    TextView tvUser;
     @Bind(R.id.address)
     EditText address;
     @Bind(R.id.name)
@@ -49,10 +46,8 @@ public class HouseResourcesActivity extends AppCompatActivity {
     EditText floor;
     @Bind(R.id.floors)
     EditText floors;
-    @Bind(R.id.room)
-    EditText room;
-    @Bind(R.id.structure)
-    EditText structure;
+    //    @Bind(R.id.room)
+//    EditText room;
     @Bind(R.id.phone)
     EditText phone;
     @Bind(R.id.contact)
@@ -68,13 +63,23 @@ public class HouseResourcesActivity extends AppCompatActivity {
     int resourcesType = 1;
     @Bind(R.id.address1)
     EditText address1;
+    @Bind(R.id.room0)
+    EditText room0;
+    @Bind(R.id.room1)
+    EditText room1;
+    @Bind(R.id.room2)
+    EditText room2;
+    @Bind(R.id.tev_title_content)
+    TextView tevTitleContent;
+    @Bind(R.id.structure)
+    EditText structure;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_house_resources);
         ButterKnife.bind(this);
-        tevAppTitle.setText("房源信息编辑");
+        tevTitleContent.setText("房源信息编辑");
         getOldMessage();
     }
 
@@ -101,7 +106,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
         }).start();
     }
 
-    @OnClick({R.id.address, R.id.room, R.id.structure, R.id.b_submit, R.id.b_rent, R.id.b_sale})
+    @OnClick({R.id.address, R.id.structure, R.id.b_submit, R.id.b_rent, R.id.b_sale,R.id.btn_title_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.b_rent:
@@ -113,7 +118,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
                 resourcesType = 2;
                 bRent.setBootstrapBrand(DefaultBootstrapBrand.REGULAR);
                 bSale.setBootstrapBrand(DefaultBootstrapBrand.PRIMARY);
-                price.setHint("总价  (万)");
+                price.setHint("总价  (万元)");
                 break;
             case R.id.address:
                 ArrayList<AddressPicker.Province> data = new ArrayList<>();
@@ -130,21 +135,21 @@ public class HouseResourcesActivity extends AppCompatActivity {
                 });
                 picker.show();
                 break;
-            case R.id.room:
-                ArrayList<AddressPicker.Province> data1 = new ArrayList<>();
-                String json1 = AssetsUtils.readText(this, "room.json");
-                data1.addAll(JSON.parseArray(json1, AddressPicker.Province.class));
-                AddressPicker picker1 = new AddressPicker(this, data1);
-                picker1.setSelectedItem("4室", "1厅", "1卫");
-                picker1.setOnAddressPickListener(new AddressPicker.OnAddressPickListener() {
-                    @Override
-                    public void onAddressPicked(String province, String city, String county) {
-                        room.setText(province + " " + city + " " + county);
-                        structure.requestFocus();
-                    }
-                });
-                picker1.show();
-                break;
+//            case R.id.room:
+//                ArrayList<AddressPicker.Province> data1 = new ArrayList<>();
+//                String json1 = AssetsUtils.readText(this, "room.json");
+//                data1.addAll(JSON.parseArray(json1, AddressPicker.Province.class));
+//                AddressPicker picker1 = new AddressPicker(this, data1);
+//                picker1.setSelectedItem("4室", "1厅", "1卫");
+//                picker1.setOnAddressPickListener(new AddressPicker.OnAddressPickListener() {
+//                    @Override
+//                    public void onAddressPicked(String province, String city, String county) {
+//                        room.setText(province + " " + city + " " + county);
+//                        structure.requestFocus();
+//                    }
+//                });
+//                picker1.show();
+//                break;
             case R.id.structure:
                 ArrayList<AddressPicker.Province> data2 = new ArrayList<>();
                 String json2 = AssetsUtils.readText(this, "structure.json");
@@ -161,7 +166,7 @@ public class HouseResourcesActivity extends AppCompatActivity {
                 picker2.show();
                 break;
             case R.id.b_submit:
-                if (room.getText().toString().length() == 0 || structure.getText().toString().length() == 0 || address.getText().toString().length() == 0||address1.getText().toString().length()==0) {
+                if (room2.getText().toString().length() == 0 || structure.getText().toString().length() == 0 || address.getText().toString().length() == 0 || address1.getText().toString().length() == 0) {
                     Toast.makeText(this, "请完整信息后提交", Toast.LENGTH_SHORT).show();
                 } else {
                     String Saddress = "";
@@ -174,24 +179,27 @@ public class HouseResourcesActivity extends AppCompatActivity {
                     String Sstructure = "";
                     String Srenovation = "";
                     try {
-                        Saddress = URLEncoder.encode(address.getText().toString()+";"+address1.getText().toString(), "UTF-8");
+                        Saddress = URLEncoder.encode(address.getText().toString() + ";" + address1.getText().toString(), "UTF-8");
                         Sname = URLEncoder.encode(name.getText().toString(), "UTF-8");
                         Scontact = URLEncoder.encode(contact.getText().toString(), "UTF-8");
-                        Iroom = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[0]);
-                        Ioffice = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[1]);
-                        Itoilet = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[2]);
+//                        Iroom = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[0]);
+//                        Ioffice = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[1]);
+//                        Itoilet = Integer.parseInt(room.getText().toString().replace("室", "").replace("卫", "").replace("厅", "").split(" ")[2]);
+                        Iroom = Integer.parseInt(room0.getText().toString());
+                        Ioffice = Integer.parseInt(room1.getText().toString());
+                        Itoilet = Integer.parseInt(room2.getText().toString());
                         Sorientation = URLEncoder.encode(structure.getText().toString().split(" ")[0], "UTF-8");
                         Sstructure = URLEncoder.encode(structure.getText().toString().split(" ")[1], "UTF-8");
                         Srenovation = URLEncoder.encode(structure.getText().toString().split(" ")[2], "UTF-8");
                     } catch (Exception e) {
-                        Saddress = address.getText().toString()+";"+address1.getText().toString();
+                        Saddress = address.getText().toString() + ";" + address1.getText().toString();
                         Sname = contact.getText().toString();
                         Scontact = contact.getText().toString();
                         Sorientation = structure.getText().toString().split(" ")[0];
                         Sstructure = structure.getText().toString().split(" ")[1];
                         Srenovation = structure.getText().toString().split(" ")[2];
                     }
-                    final String url = Config.urlHead + "uploadfile/RoomServlet?keytelphone=" + SP.getString(getApplicationContext(), "telephone") + "&filepath=" + getIntent().getStringExtra("para").split("_")[1] + "&type=" + resourcesType + "&name=" + Sname + "&address=" + Saddress + "&unitprice=" + price.getText().toString() + "&area=" + area.getText().toString() + "&propertyfee=" + managementFee.getText().toString() + "&age=" + age.getText().toString() + "&floor=" + floor.getText().toString() + "&totalfloor=" + floors.getText().toString() + "&room=" + Iroom + "&office=" + Ioffice + "&toilet=" + Itoilet + "&orientation=" + Sorientation + "&structure=" + Sstructure + "&renovation=" + Srenovation + "&telphone=" +phone.getText().toString() + "&contacts=" + Scontact;
+                    final String url = Config.urlHead + "uploadfile/RoomServlet?keytelphone=" + SP.getString(getApplicationContext(), "telephone") + "&filepath=" + getIntent().getStringExtra("para").split("_")[1] + "&type=" + resourcesType + "&name=" + Sname + "&address=" + Saddress + "&unitprice=" + price.getText().toString() + "&area=" + area.getText().toString() + "&propertyfee=" + managementFee.getText().toString() + "&age=" + age.getText().toString() + "&floor=" + floor.getText().toString() + "&totalfloor=" + floors.getText().toString() + "&room=" + Iroom + "&office=" + Ioffice + "&toilet=" + Itoilet + "&orientation=" + Sorientation + "&structure=" + Sstructure + "&renovation=" + Srenovation + "&telphone=" + phone.getText().toString() + "&contacts=" + Scontact;
                     Log.d("HouseResourcesActivity", url);
                     new Thread(new Runnable() {
                         @Override
@@ -200,8 +208,11 @@ public class HouseResourcesActivity extends AppCompatActivity {
                         }
                     }).start();
                     Toast.makeText(getApplicationContext(), "提交成功！", Toast.LENGTH_SHORT).show();
+                    finish();
+                    startActivity(new Intent(getApplicationContext(),MyHousePropertyActivity.class).putExtra("type",getIntent().getStringExtra("type")));
                 }
                 break;
+            case R.id.btn_title_back:finish();break;
         }
     }
 
@@ -232,12 +243,13 @@ public class HouseResourcesActivity extends AppCompatActivity {
                     age.setText(dataList.getString("age"));
                     floors.setText(dataList.getString("totalfloor"));
                     floor.setText(dataList.getString("floor"));
-                    room.setText(dataList.getString("room") + "室 " + dataList.getString("office") + "厅 " + dataList.getString("toilet") + "卫");
+//                    room.setText(dataList.getString("room") + "室 " + dataList.getString("office") + "厅 " + dataList.getString("toilet") + "卫");
+                    room0.setText(dataList.getString("room"));
+                    room1.setText(dataList.getString("office"));
+                    room2.setText(dataList.getString("toilet"));
                     structure.setText(dataList.getString("orientation") + " " + dataList.getString("structure") + " " + dataList.getString("renovation"));
                     phone.setText(dataList.getString("telphone"));
                     contact.setText(dataList.getString("contacts"));
-                } else {
-                    Toast.makeText(getApplicationContext(), jsonObject.getString("comment"), Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 e.printStackTrace();

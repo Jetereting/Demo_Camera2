@@ -9,10 +9,10 @@
     <include
         android:id="@+id/layout_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/app_title" />
+        android:layout_height="45dp"
+        layout="@layout/app_title_back" />
 
-    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -61,20 +61,16 @@
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
 
-        <com.beardedhen.androidbootstrap.BootstrapButton
+        <Button
             android:id="@+id/b_submit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginTop="429dp"
             android:layout_weight="1"
             android:text="提交"
-            app:bootstrapBrand="primary"
-            app:bootstrapSize="lg"
-            app:buttonMode="regular"
-            app:roundedCorners="true"
-            app:showOutline="false" />
+            android:background="#b9e3d9"/>
 
 
     </RelativeLayout>

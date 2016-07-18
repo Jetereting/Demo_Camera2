@@ -18,7 +18,7 @@ public class ImageAdapter extends PagerAdapter {
         @Override
         public int getCount() {
             //设置成最大，使用户看不到边界
-            return 10;
+            return 7;
         }
  
         @Override

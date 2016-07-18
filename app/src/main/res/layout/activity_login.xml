@@ -1,63 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/login_background">
+    android:background="@mipmap/login_bg">
 
-    <EditText
+    <com.beardedhen.androidbootstrap.BootstrapThumbnail
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/agentlogopng"
+        app:layout_marginTopPercent="10%"
+        app:bootstrapSize="sm"
+        app:bootstrapBrand="info"
+        app:hasBorder="false"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
         android:id="@+id/et_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapSize="lg"
+        android:hint="手机号"
+        android:inputType="phone"
         app:layout_widthPercent="80%"
-        app:layout_heightPercent="7%"
         app:layout_marginTopPercent="44.5%"
         app:layout_marginLeftPercent="11%"
-        android:hint="手机号"
-        android:inputType="number"
+        app:roundedCorners="true"
         android:gravity="center"
-        android:background="@null" />
-
-    <EditText
+        app:bootstrapBrand="info"/>
+    <com.beardedhen.androidbootstrap.BootstrapEditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_widthPercent="80%"
-        app:layout_heightPercent="7%"
-        app:layout_marginTopPercent="55%"
-        app:layout_marginLeftPercent="11%"
+        android:layout_height="wrap_content"
+        app:bootstrapSize="lg"
         android:hint="密码"
         android:inputType="textPassword"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="55%"
+        app:layout_marginLeftPercent="11%"
+        app:roundedCorners="true"
         android:gravity="center"
-        android:background="@null" />
-    <!-- 获取动态验证码按钮-->
-    <!--<Button-->
-        <!--android:id="@+id/bt_check_code"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--app:layout_widthPercent="25%"-->
-        <!--app:layout_heightPercent="7%"-->
-        <!--app:layout_marginTopPercent="44.5%"-->
-        <!--app:layout_marginLeftPercent="63%"-->
-        <!--android:background="@null"-->
-        <!--android:text=""-->
-        <!--android:textSize="22px"-->
-        <!--android:textColor="#89000000"/>-->
+        app:bootstrapBrand="info"/>
 
-    <!-- 登录按钮-->
-    <Button
+    <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/b_login"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="登录"
         app:layout_widthPercent="80%"
-        app:layout_heightPercent="7%"
         app:layout_marginTopPercent="64.7%"
         app:layout_marginLeftPercent="11%"
-        android:background="@null"
-        android:text="登录"
-        android:textColor="#ffffff"
-        android:textSize="33px"/>
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"/>
+
+    <!-- 获取动态验证码按钮-->
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_check_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="24%"
+        app:layout_heightPercent="7%"
+        app:layout_marginTopPercent="44.5%"
+        app:layout_marginLeftPercent="65.8%"
+        android:background="#c03cbffc"
+        android:text="|  获取验证码登录"
+        android:textSize="22px"
+        android:textColor="#89000000"/>
+
+    <!-- 登录按钮-->
 
     <!--&lt;!&ndash; 微博登录&ndash;&gt;-->
     <!--<Button-->
@@ -106,4 +123,4 @@
         android:textSize="20sp"/>
 
 
-</com.zhy.android.percent.support.PercentFrameLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

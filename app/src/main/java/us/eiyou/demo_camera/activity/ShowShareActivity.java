@@ -3,6 +3,7 @@ package us.eiyou.demo_camera.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +19,7 @@ import android.widget.ProgressBar;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import us.eiyou.demo_camera.R;
-
+//我的房产库 查看
 public class ShowShareActivity extends Activity {
 
 	@Bind(R.id.p)
@@ -63,9 +64,16 @@ public class ShowShareActivity extends Activity {
 			}
 
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				view.loadUrl(url);
+				if( url.startsWith("http:") || url.startsWith("https:") ) {
+					return false;
+				}
+
+				// Otherwise allow the OS to handle things like tel, mailto, etc.
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+				startActivity( intent );
 				return true;
 			}
+
 
 		});
 		webView.setWebChromeClient(new WebChromeClient(){
@@ -81,20 +89,13 @@ public class ShowShareActivity extends Activity {
 		iv_share.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				shareText(url);
+
 			}
 		});
 		iv_share.getBackground().setAlpha(222);
-		
+
 		et_url=(EditText)findViewById(R.id.et_url);
 		et_url.setText(url);
 	}
 
-    public void shareText(String s) {
-        Intent shareIntent = new Intent();
-        shareIntent.setAction(Intent.ACTION_SEND);
-        shareIntent.putExtra(Intent.EXTRA_TEXT, s);
-        shareIntent.setType("text/plain");
-        startActivity(Intent.createChooser(shareIntent, "分享到"));
-    }
 }

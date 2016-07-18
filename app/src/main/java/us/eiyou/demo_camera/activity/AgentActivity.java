@@ -18,7 +18,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
-import com.beardedhen.androidbootstrap.BootstrapButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -55,10 +54,8 @@ public class AgentActivity extends AppCompatActivity {
     EditText phone;
     @Bind(R.id.company)
     EditText company;
-    @Bind(R.id.b_submit)
-    BootstrapButton bSubmit;
-    @Bind(R.id.tev_app_title)
-    TextView tevAppTitle;
+    @Bind(R.id.tev_title_content)
+    TextView tevTitleContent;
     private ProgressDialog progress;
 
     @Override
@@ -66,7 +63,7 @@ public class AgentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent);
         ButterKnife.bind(this);
-        tevAppTitle.setText("经纪人");
+        tevTitleContent.setText("经纪人");
         getData();
     }
 
@@ -107,7 +104,7 @@ public class AgentActivity extends AppCompatActivity {
         }).start();
     }
 
-    @OnClick({R.id.change_photo, R.id.b_submit})
+    @OnClick({R.id.change_photo, R.id.b_submit,R.id.btn_title_back})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.change_photo:
@@ -149,6 +146,7 @@ public class AgentActivity extends AppCompatActivity {
                     Toast.makeText(this, "请完善信息", Toast.LENGTH_SHORT).show();
                 }
                 break;
+            case R.id.btn_title_back:finish();break;
         }
     }
 
@@ -160,13 +158,10 @@ public class AgentActivity extends AppCompatActivity {
                 progress.show();
                 UploadPhotoTask task = new UploadPhotoTask();
                 task.execute(data);
-//                ArrayList<String> photos = data.getStringArrayListExtra(PhotoPickerActivity.KEY_SELECTED_PHOTOS);
-//                for (String photo : photos) {
-//                    niv_photo.setImageBitmap(ImageUtil.getImageFromLocal(photo));
-//                }
             }
         }
     }
+
 
     class UploadPhotoTask extends AsyncTask<Intent, Integer, Void> {
         @Override
@@ -259,7 +254,7 @@ public class AgentActivity extends AppCompatActivity {
             progress.dismiss();
             Toast.makeText(getApplicationContext(), "上传完成！", Toast.LENGTH_SHORT).show();
             finish();
-            startActivity(new Intent(getApplicationContext(),AgentActivity.class));
+            startActivity(new Intent(getApplicationContext(), AgentActivity.class));
         }
     }
 

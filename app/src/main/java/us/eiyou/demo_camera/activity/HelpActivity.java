@@ -34,9 +34,9 @@ public class HelpActivity extends AppCompatActivity {
         ImageView view4 = (ImageView) inflater.inflate(R.layout.item_help, null);
         ImageView view5 = (ImageView) inflater.inflate(R.layout.item_help, null);
         ImageView view6 = (ImageView) inflater.inflate(R.layout.item_help, null);
-        ImageView view7 = (ImageView) inflater.inflate(R.layout.item_help, null);
-        ImageView view8 = (ImageView) inflater.inflate(R.layout.item_help, null);
-        ImageView view9 = (ImageView) inflater.inflate(R.layout.item_help, null);
+//        ImageView view7 = (ImageView) inflater.inflate(R.layout.item_help, null);
+//        ImageView view8 = (ImageView) inflater.inflate(R.layout.item_help, null);
+//        ImageView view9 = (ImageView) inflater.inflate(R.layout.item_help, null);
         ImageView view10 = (ImageView) inflater.inflate(R.layout.item_help, null);
         view1.setImageResource(R.mipmap.h1);
         view2.setImageResource(R.mipmap.h2);
@@ -44,9 +44,9 @@ public class HelpActivity extends AppCompatActivity {
         view4.setImageResource(R.mipmap.h4);
         view5.setImageResource(R.mipmap.h5);
         view6.setImageResource(R.mipmap.h6);
-        view7.setImageResource(R.mipmap.h7);
-        view8.setImageResource(R.mipmap.h8);
-        view9.setImageResource(R.mipmap.h9);
+//        view7.setImageResource(R.mipmap.h7);
+//        view8.setImageResource(R.mipmap.h8);
+//        view9.setImageResource(R.mipmap.h9);
         view10.setImageResource(R.mipmap.h10);
         ArrayList<ImageView> views = new ArrayList<>();
         views.add(view1);
@@ -55,9 +55,9 @@ public class HelpActivity extends AppCompatActivity {
         views.add(view4);
         views.add(view5);
         views.add(view6);
-        views.add(view7);
-        views.add(view8);
-        views.add(view9);
+//        views.add(view7);
+//        views.add(view8);
+//        views.add(view9);
         views.add(view10);
         viewPager.setAdapter(new ImageAdapter(views));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

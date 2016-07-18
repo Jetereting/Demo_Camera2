@@ -28,8 +28,8 @@
     <Button
         android:id="@+id/bt_upload"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_login_p"
+        android:layout_height="40dp"
+        android:background="#b9e3d9"
         android:gravity="center"
         android:text="生成漫游"
         android:layout_alignParentBottom="true"

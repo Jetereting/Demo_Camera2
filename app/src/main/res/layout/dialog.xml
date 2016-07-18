@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/dialog"
+    android:layout_gravity="center"
+    android:gravity="center"
+    style="@style/dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/qq"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="@mipmap/qq"/>
+        <View
+            android:layout_width="33dp"
+            android:layout_height="76dp"/>
+
+        <Button
+            android:id="@+id/qqkongjian"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="@mipmap/qqz" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/weixin"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="@mipmap/wx" />
+        <View
+            android:layout_width="33dp"
+            android:layout_height="76dp"/>
+
+        <Button
+            android:id="@+id/pengyouquan"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="@mipmap/wxz" />
+    </LinearLayout>
+
+
+</LinearLayout>
